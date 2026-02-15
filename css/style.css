@@ -90,26 +90,27 @@ h3 {
 /*****************************************
  *     ABOUT ME IMAGES & VIDEO
  ***************************************** */
-section {
-  margin-bottom: 40px;
-  overflow: auto; 
+.media-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
 }
 
-img {
-  margin: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+.media-container img {
+  flex: 1;
+  max-width: 45%;       /* Prevents image from getting too large */
+  height: auto;
+  margin: 0;            /* Overriding previous margins */
 }
 
-section img {
-  float: right;
-  margin-left: 20px;
-}
-
-iframe {
-  display: block;
-  margin: 20px auto;
-  max-width: 100%;
+.media-container iframe {
+  flex: 1;
+  width: 100%;
+  max-width: 45%;       /* Matches the image width */
+  aspect-ratio: 16 / 9; /* Maintains video proportions */
+  margin: 0;
 }
 
 /***************************************
