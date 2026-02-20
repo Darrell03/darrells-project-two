@@ -94,6 +94,7 @@ h3 {
   display: flex;
   gap: 20px;
   align-items: center;
+  height: auto;
   margin: 20px 0;
   flex-wrap: wrap;
 }
@@ -102,14 +103,21 @@ h3 {
   flex: 1;
   max-width: 45%;       /* Prevents image from getting too large */
   height: auto;
-  margin: 0;            /* Overriding previous margins */
+  margin: 0;            
+}
+
+.media-container2 img {
+  flex: 1;
+  max-width: 20%;       /* Prevents image from getting too large */
+  height: auto;%;
+  margin: 0;            
 }
 
 .media-container iframe {
   flex: 1;
-  width: 100%;
+  width: 1%;
   max-width: 45%;       /* Matches the image width */
-  aspect-ratio: 16 / 9; /* Maintains video proportions */
+  aspect-ratio: 16 / 9; 
   margin: 0;
 }
 
